@@ -12,3 +12,6 @@ packaging==23.1
 pycparser==2.21
 Werkzeug==2.3.7
 zipp==3.16.2
+pytz==2023.3
+six==1.16.0
+tenacity==8.2.2
