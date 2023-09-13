@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryption and Decryption</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Text Encryption and Decryption</h1>
+        <form method="POST" action="/">
+            <div class="form-group">
+                <label for="textToEncrypt">Enter Text to Encrypt:</label>
+                <input type="text" class="form-control" id="textToEncrypt" name="textToEncrypt" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Encrypt</button>
+        </form>
+
+        {% if encrypted_data %}
+        <div class="mt-4">
+            <p><strong>Encrypted Text:</strong> {{ encrypted_data }}</p>
+            <p><strong>Decrypted Text:</strong> {{ decrypted_data }}</p>
+        </div>
+        {% endif %}
+    </div>
+    
+    <!-- Add Bootstrap JS and jQuery scripts here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
