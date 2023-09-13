@@ -37,4 +37,4 @@ def index():
     return render_template('index.html', encrypted_data=None, decrypted_data=None)
 
 if __name__ == '__main__':
-    application.run(debug=True, port=5001)
+    application.run(debug=True)
